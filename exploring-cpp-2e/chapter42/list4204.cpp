@@ -5,6 +5,6 @@
 int main()
 {
   std::vector<int> vec(10);
-  int state;
+  int state {0};
   std::generate(vec.begin(), vec.end(), [&state]() { return ++state; });
 }
